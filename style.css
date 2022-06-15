@@ -1,0 +1,199 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    background-image: url(images/background3.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+}   
+.menu-icon{
+    width: 120px;
+    cursor: pointer;  
+    margin-left: 40px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+    position: relative;
+}
+nav ul li a{ 
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+nav li a:hover,
+nav li a.active{
+    color: aqua;
+}
+nav li a.active::after,
+nav li a:hover::after{
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: aqua;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+
+nav ul li a i{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.row   {
+    display: flex;
+    height: 88%;
+    align-items: center;
+
+}
+.col{
+    flex-basis: 50%;
+}
+.welcome {
+    color: #fff;
+    font-size: 50px;
+}
+.site{
+    color: #fff;
+    font-size: 11px;
+    line-height: 15px;
+}
+button{
+        width: 180px;
+        color: #000;
+        font-size: 12px;
+        padding: 12px 0;
+        background: #fff;
+        border: 0;
+        border-radius: 20px;
+        outline: none;
+        margin-top: 10px;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: content-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+}
+.card1{
+    background-image: url(images/limoges.jpg);
+}
+.card2{
+    background-image: url(images/madrid.jpg);
+}
+.card3{
+    background-image: url(images/suica.jpg);
+}
+.card4{
+    background-image: url(images/Frankfurt.jpg);
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card p{
+    text-shadow: 0 0 15px #000;
+    font-size: 8px;
+}
+#location1{
+    text-align: center;
+}
+#location1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+#location1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+#location1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);  
+}
+#location1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#location1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#location1 .pro .des span{
+    color: #000;
+    font-size: 19px;
+}
+#location1 .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+#location1 .pro .des i{
+    font-size: 12px;
+    color: rgba(243, 181, 25);
+}
+#location1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    color: #088178;
+    font-weight: 700;
+}
+#location1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
